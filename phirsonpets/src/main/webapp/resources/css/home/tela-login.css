@@ -1,0 +1,109 @@
+body {
+  background-color: #EFEFEF;
+  font-family: Calibri;
+}
+
+.form-login {
+  height: 500px;
+  width: 500px;
+  padding-left: 7rem;
+}
+
+.text-login {
+  color: #DF3770;
+  font-size: 22px;
+  padding-left: 6rem;
+  padding-bottom: 2rem;
+  padding-top: 8rem;
+}
+
+.label-login {
+  font-size: 15px;
+  color: #DF3770;
+}
+
+.input-login {
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding-right: 2rem;
+}
+
+.container-button-login {
+  padding-left: 13rem;
+  padding-top: 1rem;
+}
+
+.button-entrar {
+  border-radius: 10px;
+  background-color: #DF3770;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.icone-login {
+  padding-left: 5px;
+}
+
+.imagem-cachorro1 {
+  width: 47px;
+  height: 86px;
+}
+
+.container-imagem-cachorro1 {
+  padding-top: 7rem;
+}
+
+.division-line {
+  border-left: 1px solid #DF3670;
+  height: 350px;
+  left: 50%;
+  position: absolute;
+}
+
+.container-cadastrese {
+  height: 500px;
+  width: 500px;
+  padding-left: 13rem;
+}
+
+.text-cadastrese {
+  color: #DF3770;
+  font-size: 22px;
+  padding-top: 13rem;
+}
+
+.container-button-cadastrese {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.button-cadastrese {
+  border-radius: 10px;
+  background-color: #DF3770;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.link-cadastrese {
+  color: #FFFFFF;
+  text-decoration-none;
+}
+
+.icone-cadastrese {
+  padding-left: 6px;
+}
+
+.container-imagem-cachorro2 {
+  padding-left: 6rem;
+  padding-top: 11rem;
+}
+
+.imagem-cachorro2 {
+  width: 159px;
+  height: 83px;
+}

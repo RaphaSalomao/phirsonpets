@@ -1,0 +1,182 @@
+.usuario {
+  padding-left: 8rem;
+  padding-top: 2rem;
+}
+
+.text-inputs {
+  padding-left: 6px;
+  font-size: 15px;
+  color: #DF3770;
+}
+
+.container-email {
+  padding-right: 12rem;
+  padding-bottom: 1rem;
+}
+
+.email {
+  border: none;
+  font-size: 15px;
+}
+
+.container-nome {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nome {
+  border: none;
+  font-size: 15px;
+}
+
+.container-genero {
+  padding-right: 14rem;
+  padding-bottom: 1rem;
+}
+
+.genero {
+  border: none;
+  font-size: 15px;
+}
+
+.container-cpf {
+  padding-right: 12rem;
+  padding-bottom: 1rem;
+}
+
+.cpf {
+  border: none;
+  font-size: 15px;
+}
+
+.container-celular {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.celular {
+  border: none;
+  font-size: 15px;
+}
+
+.container-radio-buttons {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  position: absolute;
+  color: #DF3770;
+}
+
+.cuidador1 {
+  cursor: pointer;
+}
+
+.cuidador2 {
+  cursor: pointer;
+}
+
+.division-line {
+  border-left: 1px solid #DF3670;
+  height: 570px;
+  left: 50%;
+  position: absolute;
+}
+
+.container-lado-direito {
+  padding-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+.container-cep {
+  padding-right: 19rem;
+  padding-bottom: 1rem;
+}
+
+.cep {
+  border: none;
+  font-size: 15px;
+}
+
+.container-rua {
+  padding-right: 10rem;
+  padding-bottom: 1rem;
+}
+
+.rua {
+  border: none;
+  font-size: 15px;
+}
+
+.container-numero {
+  padding-right: 19rem;
+  padding-bottom: 1rem;
+}
+
+.numero {
+  border: none;
+  font-size: 15px;
+}
+
+.container-bairro {
+  padding-right: 15rem;
+  padding-bottom: 1rem;
+}
+
+.bairro {
+  border: none;
+  font-size: 15px;
+}
+
+.container-cidade {
+  padding-right: 15rem;
+  padding-bottom: 1rem;
+}
+
+.cidade {
+  border: none;
+  font-size: 15px;
+}
+
+.container-uf {
+  padding-right: 19rem;
+  padding-bottom: 1rem;
+}
+
+.uf {
+  border: none;
+  font-size: 15px;
+}
+
+.container-senha {
+  padding-right: 15rem;
+  padding-bottom: 1rem;
+}
+
+.senha {
+  border: none;
+  font-size: 15px;
+}
+
+.container-confirma_senha {
+  padding-right: 15rem;
+  padding-bottom: 1rem;
+}
+
+.confirma_senha {
+  border: none;
+  font-size: 15px;
+}
+
+.container-submit {
+  padding-left: 21rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.submit {
+  background-color: #DF3770;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+}

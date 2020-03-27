@@ -1,0 +1,115 @@
+body {
+  background-color: #EFEFEF;
+  font-family: Calibri;
+}
+
+span {
+  color: #FF0000;
+  word-break: break-word;
+  font-size: 12px;
+  display: block;
+}
+
+.navbar {
+  background-color: #00A2E0;
+}
+
+.cabecalhoPrincipal-logo {
+  width: 90px;
+  height: 90px;
+}
+
+.cabecalhoPrincipal-nav-link {
+  color: #DF3670;
+}
+
+.cabecalhoPrincipal-nav-login-link {
+  color: #DF3670;
+}
+
+.imagem-carousel {
+  object-fit: cover;
+  height: 400px;
+}
+
+.imagem-carousel2 {
+  object-fit: cover;
+  height: 400px;
+  object-position: 0 30%;
+}
+
+.imagem-carousel3 {
+  object-fit: cover;
+  height: 400px;
+  object-position: 0 30%
+}
+
+.conteudoPrincipal-logo {
+  width: 520px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.descricao-titulo {
+  font-size: 20px;
+  color: #DF3770;
+}
+
+.descricao-texto {
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer {
+  background-color: #00A2E0;
+}
+
+.container-logo {
+  padding-left: 31rem;  
+}
+
+.rodapePrincipal-logo {
+  width: 90px;
+  height: 90px;
+}
+
+.rodapePrincipal-newsletter-form {
+  text-align: center;
+  width: 25%;
+}
+
+.rodapePrincipal-newsletter-form-fieldset {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.rodapePrincipal-newsletter-form-email-input {
+  border-radius: 10px;
+}
+
+.rodapePrincipal-newsletter-form-button {
+  border-radius: 10px;
+  background-color: #DF3770;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.rodapePrincipal-newsletter-form-button,
+.rodapePrincipal-newsletter-form-email-input {
+  outline: 0;
+  border: 1px solid #DF3770;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.icone-email {
+  padding: 0 5px;
+}
+
+.rodapePrincipal-newsletter-form-legend {
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
