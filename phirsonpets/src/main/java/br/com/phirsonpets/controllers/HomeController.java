@@ -29,11 +29,11 @@ public class HomeController {
 	private UsuarioDao usuarioDao;
 
 	@Autowired
-	private UsuarioValidator usuarioValidation;
+	private UsuarioValidator usuarioValidator;
 	
 	@InitBinder
 	public void InitBinder(WebDataBinder binder) {
-		binder.addValidators(usuarioValidation);
+		binder.addValidators(usuarioValidator);
 	}
 
 	@RequestMapping("/")

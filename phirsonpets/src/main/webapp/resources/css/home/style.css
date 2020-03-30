@@ -6,8 +6,8 @@ body {
 span {
   color: #FF0000;
   word-break: break-word;
-  font-size: 12px;
   display: block;
+  font-size: 12px;
 }
 
 .navbar {
@@ -20,11 +20,21 @@ span {
 }
 
 .cabecalhoPrincipal-nav-link {
-  color: #DF3670;
+  color: #FFFFFF;
+  font-size: 20px;
 }
 
 .cabecalhoPrincipal-nav-login-link {
-  color: #DF3670;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.cabecalhoPrincipal-nav-link:hover {
+  color: #DF3770;
+}
+
+.cabecalhoPrincipal-nav-login-link:hover {
+  color: #DF3770;
 }
 
 .imagem-carousel {
@@ -66,7 +76,7 @@ span {
 }
 
 .container-logo {
-  padding-left: 31rem;  
+  padding-left: 31rem;
 }
 
 .rodapePrincipal-logo {
@@ -111,5 +121,5 @@ span {
 .rodapePrincipal-newsletter-form-legend {
   margin-bottom: 10px;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 15px;
 }

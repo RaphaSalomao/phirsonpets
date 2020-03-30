@@ -9,14 +9,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Phirson Pets</title>
-<c:url value="resources/css/home" var="CSS" />
-<c:url value="resources/imagens/home" var="IMG" />
+<c:url value="resources/css" var="CSS" />
+<c:url value="resources/imagens" var="IMG" />
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="${CSS}/style.css">
-<link rel="stylesheet" href="${CSS}/tela-login.css">
+<link rel="stylesheet" href="${CSS}/home/style.css">
+<link rel="stylesheet" href="${CSS}/home/tela-login.css">
 </head>
 <body>
 
@@ -38,13 +38,13 @@
 
 				<div class="container-button-login">
 					<button type="submit" name="Entrar" class="button-entrar">
-						Entrar<img src="${IMG}/tela-login/icone-login.svg"
+						Entrar<img src="${IMG}/home/tela-login/icone-login.svg"
 							alt="Icone Login" class="icone-login">
 					</button>
 				</div>
 
 				<div class="container-imagem-cachorro1">
-					<img src="${IMG}/tela-login/cachorro1.png" alt="Imagem Cachorro1"
+					<img src="${IMG}/home/tela-login/cachorro1.png" alt="Imagem Cachorro1"
 						class="imagem-cachorro1">
 				</div>
 				<div class="division-line"></div>
@@ -58,13 +58,13 @@
 				<div class="container-button-cadastrese">
 					<a href="${s:mvcUrl('HC#formularioCadastro').build()}">
 						<button type="button" name="Entrar" class="button-cadastrese">
-							Cadastre-se<img src="${IMG}/tela-login/icone-cadastrese.svg"
+							Cadastre-se<img src="${IMG}/home/tela-login/icone-cadastrese.svg"
 								alt="Icone Cadastre-se" class="icone-cadastrese">
 						</button>
 					</a>
 				</div>	
 				<div class="container-imagem-cachorro2">
-					<img src="${IMG}/tela-login/cachorro2.png" alt="Imagem Cachorro2"
+					<img src="${IMG}/home/tela-login/cachorro2.png" alt="Imagem Cachorro2"
 						class="imagem-cachorro2">
 				</div>
 			</div>

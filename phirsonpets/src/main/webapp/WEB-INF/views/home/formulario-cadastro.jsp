@@ -9,14 +9,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Phirson Pets</title>
-<c:url value="/resources/css/home" var="CSS" />
-<c:url value="/resources/imagens/home" var="IMG" />
+<c:url value="/resources/css" var="CSS" />
+<c:url value="/resources/imagens" var="IMG" />
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="${CSS}/style.css">
-<link rel="stylesheet" href="${CSS}/cadastro-usuario.css">
+<link rel="stylesheet" href="${CSS}/home/style.css">
+<link rel="stylesheet" href="${CSS}/home/cadastro-usuario.css">
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/default/header.jsp"%>
