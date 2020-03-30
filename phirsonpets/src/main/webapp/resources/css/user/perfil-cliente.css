@@ -1,0 +1,84 @@
+.imagem-perfil-cliente {
+  width: 140px;
+  height: 140px;
+}
+
+.nome-cliente {
+  color: #DF3770;
+  font-size: 15px;
+}
+
+.text-tier-cliente {
+  color: #DF3770;
+  font-size: 12px;
+}
+
+.imagem-perfil-cachorro {
+  width: 46px;
+  height: 46px;
+}
+
+.nome-pet {
+  color: #DF3770;
+  font-size: 12px;
+}
+
+.raca-pet {
+  color: #DF3770;
+  font-size: 12px;
+}
+
+.sexo-pet {
+  color: #DF3770;
+  font-size: 12px;
+}
+
+.icone-editar-pets {
+  cursor: pointer;
+}
+
+.icone-adicionar-pets {
+  position: absolute;
+  padding-top: 6rem;
+  cursor: pointer;
+}
+
+.text-descricao-cliente {
+  color: #DF3770;
+  font-size: 35px;
+}
+
+.descricao-cliente {
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-perfil-cuidador {
+  width: 80px;
+  height: 80px;
+}
+
+.nome-cuidador {
+  font-size: 15px;
+  color: #DF3770;
+}
+
+.button-avaliar-cuidador {
+  background-color: #DF3770;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 10px;
+  border: none;
+  border-radius: 13px;
+}
+
+.icone-flecha-subir{
+  cursor: pointer;
+}
+
+.icone-flecha-descer {
+  position: absolute;
+  padding-top: 21rem;
+  cursor: pointer;
+}

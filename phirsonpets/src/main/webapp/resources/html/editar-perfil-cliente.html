@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phirson Pets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home/style.css">
+    <link rel="stylesheet" href="css/home/perfil-cliente.css">
+    <link rel="stylesheet" href="css/home/editar-perfil-cliente.css">
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"><img src="imagens/home/logo-phirson.png" alt="Logo Phirson Pets" class="cabecalhoPrincipal-logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="imagens/home/toggle-bar.svg" alt="Icone Toggle Bar" class="cabecalhoPrincipal-icone-toggle-bar">
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="index.html">HOME</a>
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="#">CARE</a>
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="#">SUPORTE</a>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <a class="nav-item nav-link cabecalhoPrincipal-nav-login-link" href="editar-perfil-cliente.html">Editar</a>
+              <a class="nav-item nav-link cabecalhoPrincipal-nav-login-link" href="tela-login.html">Sair</a>
+            </div>
+        </nav>
+      </header>
+
+      <main>
+          <div class="container pt-1 pb-1">
+            <div class="row">
+              <div class="col-3">
+                <div class="container-imagem-perfil pb-2">
+                  <img src="imagens/home/perfil-cliente/imagem-perfil-cliente.jpg" alt="Imagem de Perfil" class="imagem-perfil-cliente rounded-circle">
+                </div>
+                  <div class="container-button-escolher-imagem pt-2">
+                    <div class="custom-file">
+                      <input type="file" class="button-escolher-imagem custom-file-input" id="inputGroupFile01">
+                      <label class="custom-file-label" for="inputGroupFile01">Escolher Imagem</label>
+                    </div>
+                  </div>
+                <h2 class="nome-cliente pb-4 pl-4">Patrick da Silva</h2>
+                <h5 class="text-tier-cliente pl-4">Tier do Cliente</h5>
+                <div class="container-tier-cliente pl-3">
+                  <img src="imagens/home/perfil-cliente/icone-estrela.svg" alt="Icone Estrela" class="icones-tier-cliente">
+                  <img src="imagens/home/perfil-cliente/icone-estrela.svg" alt="Icone Estrela" class="icones-tier-cliente">
+                </div>
+              </div>
+
+              <div class="col-6">
+                <h1 class="text-descricao-cuidador">Breve Descrição</h1>
+                  <div class="container-text-area pb-4 pt-2">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                  </div>
+                  <div class="container-input-celular form-group mx-sm-3 mb-2 d-flex">
+                    <img src="imagens/home/perfil-cuidador/icone-whatsapp-rosa.svg" alt="Icone Whatsapp" class="icone-celular pr-2">
+                    <input type="text" class="form-control" id="celular" placeholder="(11) 99999-9999">
+                  </div>
+                  <div class="container-button-tornarse-cuidador">
+                    <button type="submit" name="Tornar-se Cuidador" class="button-tornarse-cuidador">Tornar-se Cuidador</button>
+                  </div>
+                  <div class="container-button-salvar">
+                    <button type="submit" name="Salvar" class="button-salvar">Salvar</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </main>
+
+<footer class="page-footer font-small pt-4 pb-4 d-flex justify-content-end flex-column">
+  <div class="container">
+    <div class="text-center position-absolute container-logo">
+      <img src="imagens/home/logo-phirson.png" alt="Logo Phirson Pets" class="rodapePrincipal-logo">
+    </div>
+        <form class="rodapePrincipal-newsletter-form float-right">
+              <fieldset>
+                <legend class="rodapePrincipal-newsletter-form-legend" for="email-contato">FIQUE POR DENTRO</legend>
+                  <div class="rodapePrincipal-newsletter-form-fieldset">
+                    <input class="rodapePrincipal-newsletter-form-email-input" type="email" name="email-contato" id="email-contato">
+                      <button class="rodapePrincipal-newsletter-form-button" type="submit">Assinar Nossa Newsletter<img src="imagens/home/icon-email.svg" alt="Icone Newsletter" class="icone-email"></button>
+                  </div>
+                  <img src="imagens/home/icon-instagram.svg" alt="Icone Instagram" class="icone-instagram">
+              </fieldset>
+             </form>
+      </div>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

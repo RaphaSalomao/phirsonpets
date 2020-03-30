@@ -1,0 +1,40 @@
+.container-button-escolher-imagem {
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.button-escolher-imagem {
+  cursor: pointer;
+}
+
+.container-input-celular {
+  padding-right: 21rem;
+}
+
+.container-button-tornarse-cuidador {
+  padding-top: 1rem;
+}
+
+.button-tornarse-cuidador {
+  border-radius: 10px;
+  background-color: #DF3770;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.container-button-salvar {
+  padding-left: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.button-salvar {
+  border-radius: 10px;
+  background-color: #DF3770;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}

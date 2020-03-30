@@ -1,0 +1,47 @@
+.container-button-escolher-imagem {
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.button-escolher-imagem {
+  cursor: pointer;
+}
+
+.checkbox-cachorro {
+  cursor: pointer;
+}
+
+.checkbox-gato {
+  cursor: pointer;
+}
+
+.checkbox-peixe {
+  cursor: pointer;
+}
+
+.checkbox-passarinho {
+  cursor: pointer;
+}
+
+.checkbox-cavalo {
+  cursor: pointer;
+}
+
+.container-input-celular {
+  padding-right: 21rem;
+}
+
+.container-button-salvar {
+  padding-left: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.button-salvar {
+  border-radius: 10px;
+  background-color: #DF3770;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}

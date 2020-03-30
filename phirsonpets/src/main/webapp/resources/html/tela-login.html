@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phirson Pets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home/style.css">
+    <link rel="stylesheet" href="css/home/tela-login.css">
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"><img src="imagens/home/logo-phirson.png" alt="Logo Phirson Pets" class="cabecalhoPrincipal-logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="imagens/home/toggle-bar.svg" alt="Icone Toggle Bar" class="cabecalhoPrincipal-icone-toggle-bar">
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="index.html">HOME</a>
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="#">CARE</a>
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="#">SUPORTE</a>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <a class="nav-item nav-link cabecalhoPrincipal-nav-login-link" href="tela-login.html">Login</a>
+              <a class="nav-item nav-link cabecalhoPrincipal-nav-login-link" href="cadastro-usuario.html">Cadastre-se</a>
+            </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="container d-flex align-items-start">
+          <form class="form-login d-flex align-items-start justify-content-center flex-column" action="#">
+            <h1 class="text-login">Acesse sua Conta</h1>
+            <label for="login" class="label-login">Login</label>
+  				  <input name="login" type="text" id="login" class="input-login" required placeholder="Nome de Usuário">
+
+            <label for="senha" class="label-login">Senha</label>
+  				  <input name="senha" type="password" id="senha" class="input-login" required placeholder="********">
+
+            <div class="container-button-login">
+              <button type="submit" name="Entrar" class="button-entrar">Entrar<img src="imagens/home/tela-login/icone-login.svg" alt="Icone Login" class="icone-login"></button>
+            </div>
+
+            <div class="container-imagem-cachorro1">
+              <img src="imagens/home/tela-login/cachorro1.png" alt="Imagem Cachorro1" class="imagem-cachorro1">
+            </div>
+
+            <div class="division-line"></div>
+
+          </form>
+
+          <div class="container-cadastrese d-flex align-items-start justify-content-center flex-column">
+            <h1 class="text-cadastrese">Novo na Phirson?</h1>
+
+            <div class="container-button-cadastrese">
+              <button type="submit" name="Entrar" class="button-cadastrese">Cadastre-se<img src="imagens/home/tela-login/icone-cadastrese.svg" alt="Icone Cadastre-se" class="icone-cadastrese"></button>
+            </div>
+
+            <div class="container-imagem-cachorro2">
+              <img src="imagens/home/tela-login/cachorro2.png" alt="Imagem Cachorro2" class="imagem-cachorro2">
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+<footer class="page-footer font-small pt-4 pb-4 d-flex justify-content-end flex-column">
+  <div class="container">
+    <div class="text-center position-absolute container-logo">
+      <img src="imagens/home/logo-phirson.png" alt="Logo Phirson Pets" class="rodapePrincipal-logo">
+    </div>
+        <form class="rodapePrincipal-newsletter-form float-right">
+              <fieldset>
+                <legend class="rodapePrincipal-newsletter-form-legend" for="email-contato">FIQUE POR DENTRO</legend>
+                  <div class="rodapePrincipal-newsletter-form-fieldset">
+                    <input class="rodapePrincipal-newsletter-form-email-input" type="email" name="email-contato" id="email-contato">
+                      <button class="rodapePrincipal-newsletter-form-button" type="submit">Assinar Nossa Newsletter<img src="imagens/home/icon-email.svg" alt="Icone Newsletter" class="icone-email"></button>
+                  </div>
+                  <img src="imagens/home/icon-instagram.svg" alt="Icone Instagram" class="icone-instagram">
+              </fieldset>
+             </form>
+      </div>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

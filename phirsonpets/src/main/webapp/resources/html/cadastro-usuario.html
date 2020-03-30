@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phirson Pets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home/style.css">
+    <link rel="stylesheet" href="css/home/cadastro-usuario.css">
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"><img src="imagens/home/logo-phirson.png" alt="Logo Phirson Pets" class="cabecalhoPrincipal-logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="imagens/home/toggle-bar.svg" alt="Icone Toggle Bar" class="cabecalhoPrincipal-icone-toggle-bar">
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="index.html">HOME</a>
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="#">CARE</a>
+                <a class="nav-item nav-link cabecalhoPrincipal-nav-link" href="#">SUPORTE</a>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <a class="nav-item nav-link cabecalhoPrincipal-nav-login-link" href="tela-login.html">Login</a>
+              <a class="nav-item nav-link cabecalhoPrincipal-nav-login-link" href="cadastro-usuario.html">Cadastre-se</a>
+            </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="container">
+          <form id="usuario" class="usuario" action="http://localhost:8080/phirsonpets/home/cadastro-usuario" method="POST">
+            <div class="container">
+              <div class="row">
+                  <div class="col-6">
+                    <div class="d-flex flex-column">
+
+                      <div class="container-email d-flex flex-column"> <!-- Adicionar classe d-flex flex-column em todas as divs exceto na com radiobutton -->
+                          <label class="text-inputs">E-mail</label>
+                          <input id="email" class="email" name="email" type="email" value=""/> <!-- Retirar classes form control de todos -->
+                      </div>
+
+                      <div class="container-nome d-flex flex-column">
+                        <label class="text-inputs">Nome Completo</label>
+                        <input id="nome" class="nome" name="nome" type="text" value=""/>
+                      </div>
+
+                      <div class="container-genero d-flex flex-column">
+                        <label class="text-inputs">Sexo</label>
+                        <select id="genero" class="genero" name="genero">
+                          <option value="MASCULINO">MASCULINO</option>
+                          <option value="FEMININO">FEMININO</option>
+                        </select>
+                      </div>
+
+                      <div class="container-cpf d-flex flex-column">
+                        <label class="text-inputs">CPF</label>
+                        <input id="cpf" class="cpf" name="cpf" type="text" value=""/>
+                      </div>
+
+                      <div class="container-celular d-flex flex-column">
+                        <label class="text-inputs">Celular</label>
+                        <input id="celular"class="celular" name="celular" type="text" value=""/>
+                      </div>
+
+                      <div class="checkbox-cuidador d-flex">
+                        <label class="text-inputs">Deseja ser um cuidador?</label>
+                        <div class="container-radio-buttons">
+                          <input id="cuidador1" class="cuidador1" name="cuidador" vaue="false" type="radio" value="true"/>
+                            <label class="text-checkbox-sim">Sim</label>
+                          <input id="cuidador2" class="cuidador2" name="cuidador" vaue="false" type="radio" value=""/>
+                            <label class="text-checkbox-nao">Não</label>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <div class="division-line"></div>
+
+
+                <div class="col-6">
+                  <div class="d-flex flex-column">
+
+                    <div class="container-cep d-flex flex-column">
+                      <label class="text-inputs">CEP</label>
+                      <input id="cep" class="cep" name="cep" onblur="pesquisacep(this.value);" type="text" value=""/>
+                    </div>
+
+                    <div class="container-rua d-flex flex-column">
+                      <label class="text-inputs">Rua</label>
+                      <input id="rua" class="rua" name="rua" type="text" value=""/>
+                    </div>
+
+                    <div class="container-numero d-flex flex-column">
+                      <label class="text-inputs">Numero</label>
+                      <input id="numero" class="numero" name="numero" type="text" value=""/>
+                    </div>
+
+                    <div class="container-bairro d-flex flex-column">
+                      <label class="text-inputs">Bairro</label>
+                      <input id="bairro" class="bairro" name="bairro" type="text" value=""/>
+                    </div>
+
+                    <div class="container-cidade d-flex flex-column">
+                      <label class="text-inputs">Cidade</label>
+                      <input id="cidade" class="cidade" name="cidade" type="text" value=""/>
+                    </div>
+
+                    <div class="container-uf d-flex flex-column">
+                      <label class="text-inputs">Estado</label>
+                      <select id="uf" class="uf" name="uf">
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                      </select>
+                    </div>
+
+                    <div class="container-senha d-flex flex-column">
+                      <label class="text-inputs">Senha</label>
+                      <input id="senha" class="senha" name="senha" type="password" value=""/>
+                    </div>
+
+                    <div class="container-confirma_senha d-flex flex-column">
+                      <label class="text-inputs">Confirmar senha</label>
+                      <input type="password" id="confirma_senha" class="confirma_senha"/>
+                    </div>
+
+                    <div class="container-submit">
+                      <button type="submit" class="submit rounded-pill">Finalizar Cadastro</button>
+                    </div>
+
+        	          <div>
+                      <input type="hidden" name="_csrf" value="cd54fd3b-e9c0-4d00-86ba-38a3181c1e7d" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+
+<footer class="page-footer font-small pt-4 pb-4 d-flex justify-content-end flex-column">
+  <div class="container">
+    <div class="text-center position-absolute container-logo">
+      <img src="imagens/home/logo-phirson.png" alt="Logo Phirson Pets" class="rodapePrincipal-logo">
+    </div>
+        <form class="rodapePrincipal-newsletter-form float-right">
+              <fieldset>
+                <legend class="rodapePrincipal-newsletter-form-legend" for="email-contato">FIQUE POR DENTRO</legend>
+                  <div class="rodapePrincipal-newsletter-form-fieldset">
+                    <input class="rodapePrincipal-newsletter-form-email-input" type="email" name="email-contato" id="email-contato">
+                      <button class="rodapePrincipal-newsletter-form-button" type="submit">Assinar Nossa Newsletter<img src="imagens/home/icon-email.svg" alt="Icone Newsletter" class="icone-email"></button>
+                  </div>
+                  <img src="imagens/home/icon-instagram.svg" alt="Icone Instagram" class="icone-instagram">
+              </fieldset>
+             </form>
+      </div>
+</footer>
+
+      <!-- scripts da pagina -->
+      <script type="text/javascript"
+        src='/phirsonpets/resources/javascript/home/viacepJs.js'></script>
+      <script type="text/javascript"
+        src='/phirsonpets/resources/javascript/home/validaSenhaJs.js'></script>
+      <!-- scripts bootstrap -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

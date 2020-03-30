@@ -1,0 +1,77 @@
+.imagem-perfil-cuidador {
+  width: 140px;
+  height: 140px;
+}
+
+.nome-cuidador {
+  color: #DF3770;
+  font-size: 15px;
+}
+
+.text-tier-cuidador {
+  color: #DF3770;
+  font-size: 12px;
+}
+
+.text-cuidados-realizados {
+  color: #DF3770;
+  font-size: 15px;
+  padding-left: 2rem;
+}
+
+.cuidados-realizados {
+  color: #0ED9D9;
+  font-size: 15px;
+  padding-left: 2rem;
+}
+
+.text-descricao-cuidador {
+  color: #DF3770;
+  font-size: 35px;
+}
+
+.descricao-cuidador {
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-servicos {
+  color: #DF3770;
+  font-size: 35px;
+}
+
+.servicos {
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-perfil-cliente {
+  width: 80px;
+  height: 80px;
+}
+
+.nome-cliente {
+  font-size: 15px;
+  color: #DF3770;
+}
+
+.button-avaliar-cliente {
+  background-color: #DF3770;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 12px;
+  border: none;
+  border-radius: 13px;
+}
+
+.icone-flecha-subir{
+  cursor: pointer; 
+}
+
+.icone-flecha-descer {
+  position: absolute;
+  padding-top: 21rem;
+  cursor: pointer;
+}
