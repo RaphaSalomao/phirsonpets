@@ -19,4 +19,19 @@ public class PetDao {
 		em.persist(p);
 	}
 	
+	public Pet find(String id) {
+		return em.find(Pet.class, id);
+	}
+	
+	public void update(Pet pet, String idPet) {
+		Pet petAntigo = em.find(Pet.class, idPet);
+		em.refresh(petAntigo);
+		petAntigo.setGenero(pet.getGenero());
+		petAntigo.setNome(pet.getNome());
+		petAntigo.setRaca(pet.getRaca());
+	}
+
+	public void delete(String idPet) {
+		em.remove(em.find(Pet.class, idPet));
+	}
 }

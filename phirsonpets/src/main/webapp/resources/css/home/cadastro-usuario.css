@@ -19,7 +19,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-nome {
@@ -32,7 +31,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-genero {
@@ -45,7 +43,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
   cursor: pointer;
 }
 
@@ -59,11 +56,10 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-celular {
-  padding-right: 22rem;
+  padding-right: 20rem;
   padding-bottom: 1rem;
 }
 
@@ -72,7 +68,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-radio-buttons {
@@ -112,7 +107,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-rua {
@@ -125,7 +119,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-numero {
@@ -138,7 +131,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-bairro {
@@ -151,7 +143,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-cidade {
@@ -164,7 +155,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-uf {
@@ -177,7 +167,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
   cursor: pointer;
 }
 
@@ -191,7 +180,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-confirma_senha {
@@ -204,7 +192,6 @@
   font-size: 15px;
   border-radius: 10px;
   outline: 0;
-  border: none;
 }
 
 .container-submit {
@@ -220,4 +207,75 @@
   padding-left: 10px;
   border: none;
   cursor: pointer;
+}
+
+@media(max-width: 425px) {
+  .usuario {
+    padding-left: 0;
+  }
+
+  .col-6 {
+    max-width: none;
+    flex: none;
+  }
+
+  .container-email {
+    padding-right: 6rem;
+  }
+
+  .container-genero {
+    padding-right: 12rem;
+  }
+
+  .container-cpf {
+    padding-right: 13rem;
+  }
+
+  .container-celular {
+    padding-right: 11rem;
+  }
+
+  .checkbox-cuidador {
+    padding-bottom: 2rem;
+  }
+
+  .division-line {
+    display: none;
+  }
+
+  .container-cep {
+    padding-right: 14rem;
+  }
+
+  .container-rua {
+    padding-right: 2rem;
+  }
+
+  .container-numero {
+    padding-right: 15rem;
+  }
+
+  .container-bairro {
+    padding-right: 7rem;
+  }
+
+  .container-cidade {
+    padding-right: 7rem;
+  }
+
+  .container-uf {
+    padding-right: 16rem;
+  }
+
+  .container-senha {
+    padding-right: 7rem;
+  }
+
+  .container-confirma_senha {
+    padding-right: 7rem;
+  }
+
+  .container-submit {
+    padding-left: 5rem;
+  }
 }

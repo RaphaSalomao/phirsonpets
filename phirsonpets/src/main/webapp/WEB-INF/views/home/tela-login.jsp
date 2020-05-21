@@ -1,8 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
+<%@ include file="/WEB-INF/views/default/taglibs.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +7,7 @@
 <title>Phirson Pets</title>
 <c:url value="resources/css" var="CSS" />
 <c:url value="resources/imagens" var="IMG" />
+    <%@ include file="/WEB-INF/views/default/icon-links.jsp"%>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -29,12 +26,13 @@
 				method="POST">
 				<h1 class="text-login">Acesse sua Conta</h1>
 				<label for="login" class="label-login">Login</label>
-				<input name="username" type="text" id="login" class="input-login pl-2"
-					required placeholder="e-mail">
-
+				<input name="username" type="text" id="login"
+					class="input-login pl-2" required placeholder="e-mail">
+				<form:errors path="email" />
 				<label for="senha" class="label-login">Senha</label>
 				<input name="password" type="password" id="senha"
 					class="input-login pl-2" required placeholder="********">
+				<form:errors path="senha" />
 
 				<div class="container-button-login">
 					<button type="submit" name="Entrar" class="button-entrar">
@@ -44,8 +42,8 @@
 				</div>
 
 				<div class="container-imagem-cachorro1">
-					<img src="${IMG}/home/tela-login/cachorro1.png" alt="Imagem Cachorro1"
-						class="imagem-cachorro1">
+					<img src="${IMG}/home/tela-login/cachorro1.png"
+						alt="Imagem Cachorro1" class="imagem-cachorro1">
 				</div>
 				<div class="division-line"></div>
 
@@ -62,10 +60,10 @@
 								alt="Icone Cadastre-se" class="icone-cadastrese">
 						</button>
 					</a>
-				</div>	
+				</div>
 				<div class="container-imagem-cachorro2">
-					<img src="${IMG}/home/tela-login/cachorro2.png" alt="Imagem Cachorro2"
-						class="imagem-cachorro2">
+					<img src="${IMG}/home/tela-login/cachorro2.png"
+						alt="Imagem Cachorro2" class="imagem-cachorro2">
 				</div>
 			</div>
 		</div>

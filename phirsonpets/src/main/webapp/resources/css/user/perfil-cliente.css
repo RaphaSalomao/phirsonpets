@@ -1,3 +1,7 @@
+.container-imagem-perfil {
+  padding-bottom: 2rem;
+}
+
 .imagem-perfil-cliente {
   width: 140px;
   height: 140px;
@@ -6,11 +10,31 @@
 .nome-cliente {
   color: #DF3770;
   font-size: 15px;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 .text-tier-cliente {
   color: #DF3770;
   font-size: 12px;
+  padding-left: 2rem;
+}
+
+.container-tier-cliente {
+  padding-left: 1rem;
+}
+
+.container-pets {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 200px;
+  width: 100%;
+}
+
+.container-pets .row {
+  padding-bottom: 1rem;
 }
 
 .imagem-perfil-cachorro {
@@ -26,6 +50,7 @@
 .raca-pet {
   color: #DF3770;
   font-size: 12px;
+  padding-top: 1rem;
 }
 
 .sexo-pet {
@@ -37,9 +62,13 @@
   cursor: pointer;
 }
 
+.container-icone-adicionar-pet {
+  padding-bottom: 4rem;
+}
+
 .icone-adicionar-pets {
   position: absolute;
-  padding-top: 6rem;
+  padding-top: 2rem;
   cursor: pointer;
 }
 
@@ -52,6 +81,27 @@
   font-size: 17px;
   align-items: center;
   justify-content: center;
+}
+
+.celular {
+  padding-top: 2rem;
+}
+
+.icone-celular {
+  padding-right: 0.5rem;
+}
+
+.container-historico-cuidadores {
+  padding-top: 2rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 450px;
+  width: 100%;
+}
+
+.container-historico-cuidadores .row {
+  padding-bottom: 2rem;
+  width: 100%;
 }
 
 .imagem-perfil-cuidador {
@@ -81,4 +131,69 @@
   position: absolute;
   padding-top: 21rem;
   cursor: pointer;
+}
+
+
+@media(max-width: 425px) {
+  .col {
+    max-width: none;
+    flex: none;
+  }
+
+  .col-6 {
+    max-width: none;
+    flex: none;
+  }
+
+  .col-md-auto {
+    width: auto;
+  }
+
+  .col-5 {
+    max-width: none;
+  }
+
+  .col-7 {
+    max-width: none;
+  }
+
+  .container-imagem-perfil {
+    padding-left: 6rem;
+  }
+
+  .nome-cliente {
+    font-size: 20px;
+    padding-left: 7rem;
+  }
+
+  .text-tier-cliente {
+    font-size: 17px;
+    padding-left: 7rem;
+  }
+
+  .container-tier-cliente {
+    padding-left: 7.5rem;
+  }
+
+  .container-icone-adicionar-pet {
+    padding-bottom: 4rem;
+  }
+
+  .icone-adicionar-pets {
+    width: 18px;
+  }
+
+  .container-pets {
+    padding-left: 2rem;
+  }
+
+  .icone-editar-pets {
+    width: 20px;
+  }
+
+  .text-descricao-cliente {
+    font-size: 30px;
+    padding-top: 4rem;
+  }
+
 }

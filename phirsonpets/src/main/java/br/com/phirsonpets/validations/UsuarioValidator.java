@@ -60,10 +60,10 @@ public class UsuarioValidator implements Validator {
 		if (!u.getCpf().isEmpty()) {
 			String cpf = u.getCpf();
 			String email = u.getEmail();
-			if (usuarioDao.buscaUsuarioPeloCpf(cpf)) {
+			if (usuarioDao.esteCpfEstaCadastrado(cpf)) {
 				errors.rejectValue("cpf", "constraintViolated");
 			}
-			if (usuarioDao.buscaUsuarioPeloEmail(email)) {
+			if (usuarioDao.esteEmailEstaCadastrado(email)) {
 				errors.rejectValue("email", "constraintViolated");
 			}
 			if (!ValidadorCpf.isValid(cpf)) {

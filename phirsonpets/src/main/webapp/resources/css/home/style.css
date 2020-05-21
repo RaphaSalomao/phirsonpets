@@ -73,10 +73,14 @@ span {
 
 .page-footer {
   background-color: #00A2E0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .container-logo {
   padding-left: 31rem;
+  position: absolute;
+  text-align: center;
 }
 
 .rodapePrincipal-logo {
@@ -85,6 +89,7 @@ span {
 }
 
 .rodapePrincipal-newsletter-form {
+  float: right;
   text-align: center;
   width: 25%;
 }
@@ -122,4 +127,41 @@ span {
   margin-bottom: 10px;
   color: #FFFFFF;
   font-size: 15px;
+}
+
+@media(max-width: 425px) {
+  .container-descricao {
+    flex-direction: column;
+  }
+
+  .conteudoPrincipal-logo {
+    width: 350px;
+    height: 270px;
+    object-fit: cover;
+  }
+
+  .descricao-titulo {
+    padding-left: 6.5rem;
+  }
+
+  .container-logo {
+    padding-left: 1rem;
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-newsletter-form {
+    width: 50%;
+  }
+
+  .imagem-carousel {
+    height: 250px;
+  }
+
+  .imagem-carousel2 {
+    height: 250px;
+  }
+
+  .imagem-carousel3 {
+    height: 250px;
+  }
 }

@@ -2,6 +2,7 @@ package br.com.phirsonpets.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import br.com.phirsonpets.validations.LoginValidator;
 import br.com.phirsonpets.validations.PetValidator;
 import br.com.phirsonpets.validations.UsuarioValidator;
 
@@ -11,7 +12,7 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class[] {AppWebConfiguration.class, 
 				JPAConfiguration.class, SecurityConfiguration.class,
-				UsuarioValidator.class, PetValidator.class};
+				UsuarioValidator.class, PetValidator.class, LoginValidator.class};
 	}
 
 	@Override

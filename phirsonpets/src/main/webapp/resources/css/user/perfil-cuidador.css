@@ -1,22 +1,39 @@
+.container-imagem-perfil {
+  padding-bottom: 1rem;
+}
+
 .imagem-perfil-cuidador {
   width: 140px;
   height: 140px;
 }
 
+.container-icones-animais {
+  padding-bottom: 1.5rem;
+  padding-left: 0.5rem;
+}
+
 .nome-cuidador {
   color: #DF3770;
   font-size: 15px;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 .text-tier-cuidador {
   color: #DF3770;
   font-size: 12px;
+  padding-left: 2rem;
+}
+
+.container-tier-cuidador {
+  padding-left: 1.5rem;
 }
 
 .text-cuidados-realizados {
   color: #DF3770;
   font-size: 15px;
   padding-left: 2rem;
+  padding-top: 0.5rem;
 }
 
 .cuidados-realizados {
@@ -47,6 +64,27 @@
   justify-content: center;
 }
 
+.celular {
+  padding-top: 2rem;
+}
+
+.icone-celular {
+  padding-right: 0.5rem;
+}
+
+.container-historico-clientes {
+  padding-top: 2rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 450px;
+  width: 100%;
+}
+
+.container-historico-clientes .row {
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
 .imagem-perfil-cliente {
   width: 80px;
   height: 80px;
@@ -67,11 +105,97 @@
 }
 
 .icone-flecha-subir{
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .icone-flecha-descer {
   position: absolute;
   padding-top: 21rem;
   cursor: pointer;
+}
+
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media(max-width: 425px) {
+  .col-3 {
+    max-width: none;
+    flex: none;
+  }
+
+  .col-6 {
+    max-width: none;
+    flex: none;
+  }
+
+  .col-5 {
+    max-width: none;
+  }
+
+  .col-7 {
+    max-width: none;
+  }
+
+  .container-imagem-perfil {
+    padding-left: 6.5rem;
+  }
+
+  .container-button-escolher-imagem {
+    padding-right: 2rem;
+  }
+
+  .container-icones-animais {
+    padding-left: 7.5rem;
+  }
+
+  .nome-cuidador {
+    font-size: 20px;
+    padding-left: 7rem;
+  }
+
+  .text-tier-cuidador {
+    font-size: 17px;
+    padding-left: 7rem;
+  }
+
+  .container-tier-cuidador {
+    padding-left: 7.5rem;
+  }
+
+  .text-cuidados-realizados {
+    font-size: 18px;
+    padding-left: 8.5rem;
+  }
+
+  .cuidados-realizados {
+    font-size: 18px;
+    padding-left: 8.5rem;
+  }
+
+  .text-descricao-cuidador {
+    font-size: 30px;
+    padding-top: 2rem;
+  }
+
+  .text-servicos {
+    font-size: 30px;
+  }
+
+  .form-control {
+    width: auto;
+  }
+
+  .container-button-salvar {
+    padding-left: 9rem;
+  }
+
+  .page-footer{
+    position: inherit;
+  }
+
 }

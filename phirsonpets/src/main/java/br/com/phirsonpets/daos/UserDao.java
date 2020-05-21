@@ -16,18 +16,24 @@ public class UserDao implements UserDetailsService {
 
 	@PersistenceContext
 	private EntityManager manager;
-	
-	public  Usuario loadUserByUsername(String email) throws UsernameNotFoundException {
-		List<Usuario> usuarios = manager.createQuery("select u from Usuario u where u.email = :email", Usuario.class)
-			.setParameter("email", email)
-			.getResultList();
-		
-		if (usuarios.isEmpty()) {
-			throw new RuntimeException("Usuário " + email + " nao foi encontrado");
+
+	public Usuario loadUserByUsername(String email) throws UsernameNotFoundException {
+		System.out.println("Iniciando Validação");
+		try {
+			List<Usuario> usuarios = manager
+					.createQuery("select u from Usuario u where u.email = :email", Usuario.class)
+					.setParameter("email", email).getResultList();
+			System.out.println("Lista recuperada");
+			if (usuarios.isEmpty()) {
+				System.out.println("Lista vazia");
+				throw new RuntimeException("Usuário " + email + " nao foi encontrado");
+			}
+			System.out.println("Usuario: " + usuarios.get(0));
+			return usuarios.get(0);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		
-		return usuarios.get(0);
+		return null;
 	}
 
-	
 }

@@ -1,8 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="/WEB-INF/views/default/taglibs.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +69,7 @@
 										<label class="text-checkbox-sim">Sim</label>
 										<form:radiobutton path="cuidador" cssClass="cuidador1"
 											value="false" />
-										<label class="text-checkbox-nao">NÃ£o</label>
+										<label class="text-checkbox-nao">Não</label>
 										<form:errors path="cuidador" />
 									</div>
 								</div>

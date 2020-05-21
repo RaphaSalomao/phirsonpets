@@ -4,16 +4,25 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.WebApplicationContext;
 
 @Entity
+@Component
+@Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class Usuario implements UserDetails {
 	
 	private static final long serialVersionUID = 1L;
@@ -21,7 +30,6 @@ public class Usuario implements UserDetails {
 	@Id
 	private String id;
 	private String email;
-	//Diferentes Pets pertencem a um cuidador
 	@OneToMany(fetch = FetchType.EAGER)
 	private List<Pet> pets = new ArrayList<Pet>();
 	@ManyToMany(fetch = FetchType.EAGER)
@@ -38,6 +46,8 @@ public class Usuario implements UserDetails {
 	private String numero;
 	private String cidade;
 	private String senha;
+	private double notaMedia;
+	private int petIndice;
 	
 	public Usuario() {
 	}
@@ -139,6 +149,32 @@ public class Usuario implements UserDetails {
 
 	public void setPets(List<Pet> pets) {
 		this.pets = pets;
+	}
+
+	public void removePet(Pet pet) {
+		this.pets.remove(pet);
+	}
+	
+	public double getNotaMedia() {
+		return notaMedia;
+	}
+
+	public void setNotaMedia(double notaMedia) {
+		this.notaMedia = notaMedia;
+	}
+	
+	public int getNotaInteira() {
+		String notaString = "" + this.notaMedia;
+		String[] vetorNotaString = notaString.split(".");
+		return Integer.valueOf(vetorNotaString[0]);
+	}
+	
+	public int getPetIndice() {
+		return petIndice;
+	}
+
+	public void setPetIndice(int petIndex) {
+		this.petIndice = petIndex;
 	}
 
 	@Override

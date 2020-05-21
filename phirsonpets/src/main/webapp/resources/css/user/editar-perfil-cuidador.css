@@ -1,4 +1,9 @@
+.container-imagem-perfil {
+  padding-bottom: 1rem;
+}
+
 .container-button-escolher-imagem {
+  padding-top: 1rem;
   padding-right: 3rem;
   cursor: pointer;
 }
@@ -7,28 +12,68 @@
   cursor: pointer;
 }
 
+.container-icones-animais {
+  padding-bottom: 1.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.container-checkbox-cachorro {
+  padding-right: 0.5rem;
+}
+
 .checkbox-cachorro {
   cursor: pointer;
+}
+
+.container-checkbox-gato {
+  padding-right: 0.5rem;
 }
 
 .checkbox-gato {
   cursor: pointer;
 }
 
+.container-checkbox-peixe {
+  padding-right: 0.5rem;
+}
+
 .checkbox-peixe {
   cursor: pointer;
+}
+
+.container-checkbox-passarinho {
+  padding-right: 0.5rem;
 }
 
 .checkbox-passarinho {
   cursor: pointer;
 }
 
+.container-checkbox-cavalo {
+  padding-right: 0.5rem;
+}
+
 .checkbox-cavalo {
   cursor: pointer;
 }
 
+.container-text-area {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.text-area {
+  resize: none;
+}
+
 .container-input-celular {
   padding-right: 21rem;
+  margin-bottom: 1rem;
+}
+
+.icone-celular {
+  padding-right: 1rem;
 }
 
 .container-button-salvar {
@@ -44,4 +89,70 @@
   border: none;
   cursor: pointer;
   font-size: 20px;
+}
+
+@media(max-width: 425px) {
+  .col-3 {
+    max-width: none;
+    flex: none;
+  }
+
+  .col-6 {
+    max-width: none;
+    flex: none;
+  }
+
+  .container-imagem-perfil {
+    padding-left: 6rem;
+  }
+
+  .container-button-escolher-imagem {
+    padding-right: 2rem;
+  }
+
+  .container-icones-animais {
+    padding-left: 4.5rem;
+  }
+
+  .nome-cuidador {
+    font-size: 20px;
+    padding-left: 7rem;
+  }
+
+  .text-tier-cuidador {
+    font-size: 17px;
+    padding-left: 7rem;
+  }
+
+  .container-tier-cuidador {
+    padding-left: 7.5rem;
+  }
+
+  .text-cuidados-realizados {
+    font-size: 18px;
+    padding-left: 8.5rem;
+  }
+
+  .cuidados-realizados {
+    font-size: 18px;
+    padding-left: 8.5rem;
+  }
+
+  .text-descricao-cuidador {
+    font-size: 30px;
+    padding-top: 2rem;
+  }
+
+  .text-servicos {
+    font-size: 30px;
+  }
+
+  .form-control {
+    width: auto;
+  }
+
+  .container-button-salvar {
+    padding-left: 9rem;
+  }
+
 }

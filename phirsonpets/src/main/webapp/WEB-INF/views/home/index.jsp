@@ -1,7 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@ include file="/WEB-INF/views/default/taglibs.jsp" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,11 +7,11 @@
     <title>Phirson Pets</title>
     <c:url value="/resources/css" var="CSS"/>
    	<c:url value="/resources/imagens" var="IMG" />
+    <%@ include file="/WEB-INF/views/default/icon-links.jsp"%>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="${CSS}/home/style.css">
   </head>
   <body>
-
 	<%@ include file="/WEB-INF/views/default/header.jsp" %>
       <main>
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -58,7 +55,7 @@
           <div class="container d-flex pt-3">
             <img src="${IMG}/home/logo-phirson.png" alt="Logo Phirson Pets" class="conteudoPrincipal-logo">
             <div class="d-flex flex-column">
-              <h1 class="descricao-titulo">Breve DescriÃ§Ã£o</h1>
+              <h1 class="descricao-titulo">Breve Descrição</h1>
                   <p class="descricao-texto">Lorem Ipsum is simply dummy text of the printing and typesetting
                      industry. Lorem Ipsum has been the industry's standard dummy text
                       ever since the 1500s, when an unknown printer took a galley of

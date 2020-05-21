@@ -29,6 +29,7 @@ body {
   box-sizing: border-box;
   font-size: 15px;
   padding-right: 2rem;
+  padding-left: 1rem;
 }
 
 .container-button-login {
@@ -101,4 +102,50 @@ body {
 .imagem-cachorro2 {
   width: 159px;
   height: 83px;
+}
+
+@media(max-width: 425px) {
+.container-form {
+  flex-direction: column;
+}
+
+.form-login {
+  height: auto;
+  width: auto;
+  padding-left: 2rem;
+}
+
+.text-login {
+  padding-top: 2rem;
+}
+
+.container-button-login {
+  padding-left: 0;
+}
+
+.container-imagem-cachorro1 {
+  display: none;
+}
+
+.division-line {
+  display: none;
+}
+
+.container-cadastrese {
+  height: auto;
+  width: auto;
+  padding-left: 0;
+}
+
+.text-cadastrese {
+  display: none;
+}
+
+.container-button-cadastrese {
+  padding-left: 2rem;
+  padding-bottom: 17rem;
+}
+
+.container-imagem-cachorro2 {
+  display: none;
 }

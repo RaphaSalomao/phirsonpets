@@ -38,7 +38,6 @@ public class JPAConfiguration {
 		factoryBean.setJpaProperties(properties);
 		factoryBean.setPackagesToScan("br.com.phirsonpets.model");
 		
-		
 		return factoryBean;
 	}
 	

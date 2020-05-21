@@ -13,13 +13,16 @@ import br.com.phirsonpets.controllers.HomeController;
 import br.com.phirsonpets.controllers.UserController;
 import br.com.phirsonpets.daos.PetDao;
 import br.com.phirsonpets.daos.UsuarioDao;
+import br.com.phirsonpets.model.Usuario;
+import br.com.phirsonpets.validations.LoginValidator;
 import br.com.phirsonpets.validations.PetValidator;
 import br.com.phirsonpets.validations.UsuarioValidator;
 
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {HomeController.class, UserController.class, 
 		UsuarioDao.class,PetDao.class,
-		UsuarioValidator.class, PetValidator.class})
+		UsuarioValidator.class, PetValidator.class,LoginValidator.class,
+		Usuario.class})
 public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 	
 	@Bean
@@ -27,6 +30,7 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
+		resolver.setExposedContextBeanNames("usuario");
 		return resolver;
 	}
 	
